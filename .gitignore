@@ -1,0 +1,7 @@
+
+/netbeans
+netbeans-bin.zip
+/src/debian/apache-netbeans
+*.deb
+/src/debian/.debhelper
+/src/netbeans

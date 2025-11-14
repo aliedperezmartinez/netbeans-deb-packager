@@ -1,0 +1,6 @@
+usr/* /usr/
+
+apache-netbeans-ide.desktop /usr/share/applications/
+netbeans/nb/apache-netbeans.svg /usr/share/icons/hicolor/scalable/apps/
+
+netbeans/* /usr/lib/apache-netbeans/
