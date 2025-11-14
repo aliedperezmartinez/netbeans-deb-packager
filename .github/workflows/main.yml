@@ -1,0 +1,11 @@
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Netbeans version'
+        required: true
+
+jobs:
+  package_netbeans:
+    name: Package Netbeans
+    runs-on: ubuntu-22.04
