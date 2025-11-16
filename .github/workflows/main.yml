@@ -17,3 +17,8 @@ jobs:
         run: chmod +x ./package.sh
       - name: Run the script
         run: ./package.sh ${{ github.event.inputs.version }}
+      - name: Upload Debian package
+        uses: actions/upload-artifact@v3
+        with:
+          name: apache-netbeans-deb
+          path: ../*.deb
