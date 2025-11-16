@@ -2,7 +2,7 @@ on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Netbeans version'
+        description: "Netbeans version"
         required: true
 
 jobs:
@@ -14,4 +14,4 @@ jobs:
       - name: Make script executable
         run: chmod +x ./package.sh
       - name: Run the script
-        run: ./package.sh
+        run: ./package.sh ${{ github.event.inputs.version }}
