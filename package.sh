@@ -19,6 +19,6 @@ cp netbeans/nb/apache-netbeans256.png usr/share/icons/hicolor/256x256/apps/apach
 cp netbeans/nb/apache-netbeans512.png usr/share/icons/hicolor/512x512/apps/apache-netbeans.png
 cp netbeans/nb/apache-netbeans1024.png usr/share/icons/hicolor/1024x1024/apps/apache-netbeans.png
 
-dh_make --createorig -y -s -e aliedperezmartinez@gmail.com --fullname Alied -p apache-netbeans_${NETBEANS_VERSION}
+dh_make --createorig -y -s -e aliedperezmartinez@gmail.com -p apache-netbeans_${NETBEANS_VERSION}
 
 DEB_BUILD_OPTIONS=nostrip debuild -us -uc -b
