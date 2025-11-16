@@ -18,7 +18,8 @@ jobs:
       - name: Run the script
         run: ./package.sh ${{ github.event.inputs.version }}
       - name: Upload Debian package
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v5
         with:
           name: apache-netbeans-deb
           path: ../*.deb
+          compression-level: 0
