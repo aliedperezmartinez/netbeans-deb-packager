@@ -23,7 +23,3 @@ jobs:
           name: apache-netbeans-deb
           path: apache-netbeans*.deb
           compression-level: 0
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          files: apache-netbeans*.deb
