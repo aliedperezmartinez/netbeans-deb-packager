@@ -7,7 +7,7 @@ curl -L -o netbeans-bin.zip "https://www.apache.org/dyn/closer.lua/netbeans/netb
 unzip netbeans-bin.zip
 envsubst < control.tpl > debian/control
 envsubst < apache-netbeans-ide.desktop.tpl > apache-netbeans-ide.desktop
-envsubst < changelog.tpl > src/debian/changelog
+envsubst < changelog.tpl > debian/changelog
 mkdir -p usr/bin/
 mkdir -p usr/share/icons/hicolor/48x48/apps/
 mkdir -p usr/share/icons/hicolor/256x256/apps/
