@@ -6,6 +6,8 @@ cd src
 curl -L -o netbeans-bin.zip "https://www.apache.org/dyn/closer.lua/netbeans/netbeans/${NETBEANS_VERSION}/netbeans-${NETBEANS_VERSION}-bin.zip?action=download"
 unzip netbeans-bin.zip
 envsubst < control.tpl > debian/control
+echo "Debian control file:"
+cat debian/control
 envsubst < apache-netbeans-ide.desktop.tpl > apache-netbeans-ide.desktop
 mkdir -p usr/bin/
 mkdir -p usr/share/icons/hicolor/48x48/apps/
